@@ -1,0 +1,28 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: My New Hugo Site
+
+theme: mymenu
+
+menu:
+  main:
+  - name: Home
+    weight: 10
+    pageref: /
+  - name: Features
+    weight: 20
+    pageref: /features
+  - name: Pricing
+    weight: 30
+    pageref: /pricing
+  - name: Custom Dropdown
+    weight: 40
+    identifier: custom_dropdown
+  - name: Dropdown 1
+    weight: 30
+    pageref: /dropdown1
+    parent: custom_dropdown
+  - name: Dropdown 2
+    weight: 20
+    pageref: /dropdown2
+    parent: custom_dropdown
